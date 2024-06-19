@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+     <style>
+         *{
+             margin:10px ;
+             text-align: center;
+         }
+         header{
+             border: 2px solid green;
+             height: 10%;
+             font-size: 1.66em;
+         }
+         main{
+             border: 2px solid green;
+             height: 70%;
+             font-size: 1.2em;
+         }
+         nav{
+             border: 2px solid green;
+             height: 10%;
+             font-size: 1.1em;
+         }
+         footer{
+             border: 2px solid green;
+             height: 10%;
+         }
+     </style>
+  <title> "读好书、练思维、爱编程" </title>
+ </head>
+
+ <body>
+  <header>
+      爱吃饭
+  </header>
+  <nav>
+    海量经典正向您传过来，请耐心等等...
+  </nav>
+  <main id = 'main'>
+    <img  id = "bookFace">
+    <div id ="showBook">
+      
+      <div id = "mediaUI">
+       <button id="prevMedia">Prev</button> 
+       <button id="playPause">Play | Pause</button> 
+       <button id="duration">000</button>
+       <button id="nextMedia">Next</button> 
+      </div>
+      <video id ="myV" ></video>
+      <ol id = "bookMenu"></ol>
+      <audio id = "myA"></audio> 
+    </div>
+  </main> 
+
+  <footer> 
+   <p >
+    CopyRight from  江西科技师范大学 --2025
+	 </p>
+  </footer> 
+
+ <script >
+     var UI ={};
+     UI.appWidth = window.innerWidth;
+     UI.appHeight = window.innerHeight;
+     let baseFont = UI.appWidth / 20;
+     //通过改变body对象的字体大小，这个属性能够继承给子子孙孙。
+     document.body.style.fontSize = baseFont + "px";
+     //通过把body对象的高度设置为设备（屏幕）的高度，实现纵向全屏，
+     // 通过css对子对象纵向的配合，从而实现从而实现响应式设计的目标。
+     document.body.style.height = UI.appHeight-70 + "px";
+ </script>
+ </body>
+</html>
